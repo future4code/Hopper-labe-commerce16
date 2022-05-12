@@ -2,7 +2,7 @@ import React from "react";
 import Produto from "./Produto";
 
 export default function Main(props) {
-    const { produtos, onAdd } = props;
+    const { produtos, onAdd} = props;
     return(
         <main className="block col-2">
             <h2>Produtos</h2>
