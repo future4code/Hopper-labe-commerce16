@@ -48,7 +48,7 @@ class App extends React.Component{
         ))}
 
         {}
-        <Carrinho carrinho={this.state.carrinho}/>
+        <Carrinho />
       </div>
     );
   }

@@ -1,8 +1,25 @@
-import { isLabelWithInternallyDisabledControl } from "@testing-library/user-event/dist/utils";
 import React from "react";
 
-let productList = []
-
+let productList = [
+    {
+        id: "1",
+        name: "Aerolito de Isopor",
+        value: 10.0,
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Meteorito_Mar%C3%ADlia.jpg",
+      },
+      {
+        id: "2",
+        name: "Aerolito do Guarujá",
+        value: 370.0,
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Meteorito_Mar%C3%ADlia.jpg",
+      },
+      {
+        id: "3",
+        name: "Aerolito Voador",
+        value: 5000.0,
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Meteorito_Mar%C3%ADlia.jpg",
+      }
+]
 class Product extends React.Component {
     constructor(props){
         super(props);
@@ -58,7 +75,7 @@ class ProductList extends React.Component {
 
     componentDidMount(){
         setTimeout(() => {
-            this.setState({ productList : this.props.carrinho})
+            this.setState({ productList : productList})
         }, 1000);
     }
 
