@@ -37,25 +37,25 @@ justify-content: space-between;
 }
 
 button {
-border: none;
+border: 3px solid goldenrod;
 padding: 0 2rem;
 height: 3rem;
 display: flex;
 align-items: center;
 justify-content: center;
-width: 100%;
-background: goldenrod;
+width: 90%;
+background: transparent;
 border-radius: 0.75rem;
 cursor: pointer;
-color: white;
-font: inherit;
+color: goldenrod;
+font-weight: bold;
 transition: 0.5s;
 outline: none;
 }
 
 button:hover {
-color: goldenrod;
-background: aqua;
+  color:white;
+  background: goldenrod;
 }
 .Logo{
 font-size: 2rem;
@@ -108,7 +108,7 @@ z-index: 1;
   align-items:center ;
   justify-content: center;
   margin: 1rem;
-  background:white;
+  background: white;
   width: 100%;
   padding: 2rem;
   height: 100%;
@@ -119,7 +119,7 @@ z-index: 1;
 .card-logo{
   width: 250px;
    height: 250px;
-object-fit: cover;
+object-fit:cover;
 }
 .card-title {
   font-size: 1rem;
