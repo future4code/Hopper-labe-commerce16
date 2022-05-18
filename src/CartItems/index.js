@@ -1,17 +1,20 @@
 import React from "react";
 import Item from "../Item";
 
-const CartItems = () => {
-    return (
-        <footer>
-        <ul>
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-</ul>
-    </footer>
-    )
+class CartItems extends React.Component {
+    render() {
+        return (
+            <footer>
+                <div>
+                        {this.props.ProdutosDoCarrinho.map((product) => {
+                            return <Item
+                                Itens={product}
+                            />
+                        })}
+                </div>
+            </footer>
+        )
+    }
 }
 
 export default CartItems;
