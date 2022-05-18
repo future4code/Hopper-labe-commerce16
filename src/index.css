@@ -1,0 +1,241 @@
+  /* Código Bruno */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+font-size: 16px;
+font-family: sans-serif;
+color: #333;
+}
+
+header {
+  position:fixed;
+  top: 0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100vw;
+ height: 15vh;
+ background: #f8f7f7;
+ z-index: 10;
+ box-shadow: 5px 5px 20px rgba(0,0,0,0.25);
+ background: linear-gradient(to right, #4ca1af, #c4e0e5);
+}
+
+nav {
+
+display: flex;
+max-width: 900px;
+width: 90%;
+align-items: center;
+justify-content: space-between;
+}
+
+button {
+border: 3px solid goldenrod;
+padding: 0 2rem;
+height: 3rem;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 90%;
+background: transparent;
+border-radius: 0.75rem;
+cursor: pointer;
+color: goldenrod;
+font-weight: bold;
+transition: 0.5s;
+outline: none;
+}
+
+button:hover {
+  color:white;
+  background: goldenrod;
+}
+.Logo{
+font-size: 2rem;
+font-weight: normal;
+}
+
+.nav-bar-itens{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.nav-bar-itens-quantity{
+  font-size: 1rem;
+}
+
+.nav-bar-itens-price{
+font-size: 1.25rem;
+font-weight: bold;
+}
+
+.clean-btn {
+max-width: 8rem;
+}
+
+main{
+margin-top: 15vh;
+width: 100%;
+min-height: 60vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #f8f7f7;
+z-index: 1;
+}
+
+.courses-section{
+  display: grid;
+  max-width: 900px;
+  width: 90%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  justify-content: center;
+  margin: 1rem;
+  background: white;
+  width: 100%;
+  padding: 2rem;
+  height: 100%;
+  border-radius: 0.75rem;
+  box-shadow: 4px 4px 5px rgba(0,0,0,0.25);
+}
+
+.card-logo{
+  width: 250px;
+   height: 250px;
+object-fit:cover;
+}
+.card-title {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+footer{
+display: flex;
+padding: 2rem 0;
+align-items: center;
+justify-content: center;
+background: linear-gradient(to right, #4ca1af, #c4e0e5);
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  width: 90%;
+  list-style: none;
+  gap: 2rem;
+}
+
+li{
+  display: grid;
+  box-shadow: 4px 4px 5px rgba(0,0,0,0.25);
+grid-template-columns: 2fr 1fr 1fr;
+  padding: 2rem;
+  border-radius: 0.75;
+align-items: center;
+}
+
+.remove-btn{
+  border: 3px solid goldenrod;
+  background: transparent;
+color: goldenrod;
+font-weight: bold;
+}
+
+.remove-btn:hover{
+color:white;
+background: goldenrod;
+}
+
+@media(max-width:800px){
+  .courses-section{
+    grid-template-columns: 1fr ;
+  }
+}
+
+@media(max-width:520px){
+  .courses-section{
+    grid-template-columns: 1fr;
+  }
+  .nav-bar-itens-quantity{
+    font-size: 5rem;
+  }
+  
+  .nav-bar-itens-price{
+  font-size: 1rem;
+  font-weight: bold;
+  
+  }
+  .nav-bar-itens-quantity{
+    font-size: 1rem;
+  }
+  .nav-bar-itens-price{
+  font-size: 1.25rem;
+  font-weight: bold;
+  }
+}
+
+.nav-bar-actions{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 70%;
+}
+
+.list-title{
+font-size: 1rem;
+}
+
+.list-price{
+font-size: 0.75rem;
+}
+
+.remove-btn:hover{
+  font-size: 0.75rem;
+}
+
+/*Código Do Mario*/
+
+.Filtro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+} 
+
+.FiltroFilho {
+  background-color: #4ca1af;
+  display: none;
+  position: absolute;
+}
+
+.Filtro ul li img{
+  width: 30px;
+}
+.Filtro ul {
+  background: #4ca1af;
+  width: 100px;
+}
+
+.Filtro ul li:hover li{
+  display: block;
+}
+
